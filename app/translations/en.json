@@ -1,0 +1,16 @@
+{
+  "app.containers.AboutPage.header": "This is the AboutPage container!",
+  "app.containers.GalleryPage.header": "This is the GalleryPage container!",
+  "app.containers.HomePage.header": "This is the HomePage container!",
+  "app.containers.LocaleToggle.en": "English",
+  "app.containers.LocaleToggle.zh": "中文",
+  "app.containers.Navbar.about": "about us",
+  "app.containers.Navbar.gallery": "gallery",
+  "app.containers.Navbar.home": "home",
+  "app.containers.Navbar.navbar": "This is the Navigation Bar",
+  "app.containers.Navbar.newcomer": "I'm New",
+  "app.containers.Navbar.sermon": "sermon",
+  "app.containers.NewcomerPage.header": "This is the NewcomerPage container!",
+  "app.containers.NotFoundPage.header": "This is the NotFoundPage container!",
+  "app.containers.SermonPage.header": "This is the SermonPage container"
+}

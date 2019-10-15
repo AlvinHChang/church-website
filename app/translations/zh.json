@@ -1,0 +1,16 @@
+{
+  "app.containers.AboutPage.header": "",
+  "app.containers.GalleryPage.header": "",
+  "app.containers.HomePage.header": "",
+  "app.containers.LocaleToggle.en": "English",
+  "app.containers.LocaleToggle.zh": "中文",
+  "app.containers.Navbar.home": "主頁",
+  "app.containers.Navbar.about": "教會簡介",
+  "app.containers.Navbar.sermon": "講道",
+  "app.containers.Navbar.gallery": "Gallery",
+  "app.containers.Navbar.navbar": "",
+  "app.containers.Navbar.newcomer": "新来的",
+  "app.containers.NewcomerPage.header": "",
+  "app.containers.NotFoundPage.header": "",
+  "app.containers.SermonPage.header": ""
+}

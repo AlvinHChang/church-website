@@ -1,0 +1,27 @@
+.mainContainer {
+  height: 100%;
+}
+.homeContainer {
+  background-image: url('this-way-to-freedom.jpg');
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  padding-top: 20%;
+  padding-bottom: 20%;
+}
+.homeCard {
+  height: 150px;
+  width: 40%;
+}
+.homeMessage{
+  font-size: 50px;
+  text-align: center;
+}
+
