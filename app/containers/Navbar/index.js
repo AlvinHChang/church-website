@@ -11,6 +11,7 @@ import { FormattedMessage } from 'react-intl';
 import messages from './messages';
 import styles from './Navbar.css';
 import tllcLogo from '../../images/tllccLogo.png';
+import LanguageToggle from '../LanguageToggle';
 
 function Navbar() {
   return (
@@ -37,6 +38,9 @@ function Navbar() {
           <Link className={styles.linksNewcomer} to="/newcomer">
             <FormattedMessage {...messages.newcomer} />
           </Link>
+          <div className={styles.linksFlexItem}>
+            <LanguageToggle />
+          </div>
         </div>
       </nav>
     </header>

@@ -19,9 +19,20 @@
 .homeCard {
   height: 150px;
   width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.homeCardSpacing {
+  height: 20px;
 }
 .homeMessage{
+  color: white;
   font-size: 50px;
   text-align: center;
+}
+.welcomeButton {
+  width: 200px;
 }
 

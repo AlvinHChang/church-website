@@ -19,7 +19,6 @@ import NotFoundPage from 'containers/NotFoundPage/Loadable';
 import Navbar from 'containers/Navbar/Loadable';
 
 import GlobalStyle from '../../global-styles';
-import LanguageToggle from '../LanguageToggle';
 
 export default function App() {
   return (
@@ -35,7 +34,6 @@ export default function App() {
         <Route component={NotFoundPage} />
       </Switch>
       <GlobalStyle />
-      <LanguageToggle />
     </div>
   );
 }

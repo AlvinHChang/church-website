@@ -1,3 +1,6 @@
+@value colors: "../../globals/global-styles.css";
+@value gray, lightGray from colors;
+
 .navbarContainer {
  height: 105px;
 }
@@ -17,7 +20,7 @@
   flex-direction: row;
   height: 100%;
   width: 100%;
-  background-color: #4E505C;
+  background-color: gray;
   padding-left:15px;
   padding-right:15px;
 }
@@ -34,11 +37,11 @@
   padding-right: 15px;
 }
 .linksFlexItem:hover {
-  color: #9fa0a3;
+  color: lightGray;
 }
 .linksNewcomer {
   composes: linksFlexItem;
-  outline: #9fa0a3 solid 3px;
+  outline: lightGray solid 3px;
   padding: 4px;
 
 }

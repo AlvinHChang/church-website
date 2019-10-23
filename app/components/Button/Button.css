@@ -1,0 +1,17 @@
+.mainButton {
+    background-color: inherit;
+    color: inherit;
+    border-color: inherit;
+    border-radius: 8px;
+    font-size:1vw;
+    height: 100%;
+    width: 100%;
+
+}
+.mainButton:focus {
+    outline: none;
+}
+.mainButton:hover {
+    outline: inherit;
+}
+

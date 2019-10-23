@@ -16,4 +16,8 @@ export default defineMessages({
     id: `${scope}.welcome`,
     defaultMessage: 'This way to life',
   },
+  welcomeButton: {
+    id: `${scope}.welcomeButton`,
+    defaultMessage: 'Click to Learn More',
+  },
 });

@@ -15,13 +15,19 @@ export default function HomePage() {
   return (
     <div className={styles.mainContainer}>
       <div className={styles.homeContainer}>
-        <div className={styles.homeCard}>
-          <div className={styles.homeMessage}>
-          <FormattedMessage
-            {...messages.welcome}
-            />
-          </div>
-          <Button text="hello" />
+          <div className={styles.homeCard}>
+              <div className={styles.homeMessage}>
+                  <FormattedMessage
+                      {...messages.welcome}
+                  />
+              </div>
+              <div className={styles.homeCardSpacing}>
+              </div>
+              <div className={styles.welcomeButton}>
+                  <Button fontColor="white" hoverColor="gray">
+                    <FormattedMessage {...messages.welcomeButton} />
+                </Button>
+            </div>
         </div>
       </div>
       <FormattedMessage {...messages.header} />
