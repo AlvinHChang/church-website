@@ -5,36 +5,29 @@
  */
 
 import React from 'react';
+import { useState } from 'react';
 import PropTypes from 'prop-types';
 import styles from './Button.css';
 
-class Button extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {isHoveredOver: false}
-    }
-    toggleHover = () => {
-        this.setState((prevState) => ({
-            isHoveredOver: !prevState.isHoveredOver,
-        }));
-    };
-    render() {
-        const {backgroundColor, fontColor, children, hoverColor, onClick} = this.props;
-        const color = this.state.isHoveredOver ? hoverColor : fontColor;
-        const buttonWrapperStyle = {
-            color,
+const Button = (props) => {
+    const [isHoveredOver, setHoveredOver] = useState(false);
+    const {backgroundColor, fontColor, children, hoverColor, onClick} = props;
+    // If we have items, render them
+    return (
+        <div style={{
             backgroundColor,
-        };
-        // If we have items, render them
-        return (
-            <div style={buttonWrapperStyle}>
-                <button onClick={onClick} type="button" className={styles.mainButton} onMouseEnter={this.toggleHover} onMouseLeave={this.toggleHover}>
-                    {children}
-                </button>
-            </div>
-        );
-    }
-}
+            color: isHoveredOver ? hoverColor : fontColor
+        }}>
+            <button onClick={onClick}
+                    type="button"
+                    className={styles.mainButton}
+                    onMouseEnter={() => {setHoveredOver(true)}}
+                    onMouseLeave={() => {setHoveredOver(false)}}>
+                {children}
+            </button>
+        </div>
+    );
+};
 
 Button.propTypes = {
     onClick: PropTypes.func,

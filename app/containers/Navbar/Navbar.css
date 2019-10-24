@@ -3,15 +3,18 @@
 
 .navbarContainer {
  height: 105px;
+  position: relative
 }
 .navbarRightContainer {
   display: flex;
   flex-direction: row;
   height: 100%;
 }
-.tllcLogo {
-  height: 77px;
-  width: 154px;
+.navbarRightContainerMobile {
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  background-color: gray;
 }
 .navbar {
   display:flex;
@@ -24,7 +27,10 @@
   padding-left:15px;
   padding-right:15px;
 }
-
+.tllcLogo {
+  height: 77px;
+  width: 154px;
+}
 .linksFlexItem {
   align-self: center;
   margin: 10px;
@@ -45,5 +51,16 @@
   padding: 4px;
 
 }
+.linksFlexItemMobile {
+  composes: linksFlexItem;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.mobileList {
+  background-color: gray;
+  display: flex;
+  flex-direction: column;
+}
+
 
 

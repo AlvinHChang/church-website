@@ -1,0 +1,18 @@
+@value colors: "../../globals/global-styles.css";
+@value gray, lightGray from colors;
+
+.aboutPageContainer {
+    display:flex;
+}
+.aboutImg {
+    height: 75vmin;
+    display: inline-block;
+    float: left;
+    padding-right: 20px;
+}
+.aboutText {
+    color: gray;
+    padding-left: 30px;
+    padding-right: 30px;
+    line-height: 1.5;
+}
